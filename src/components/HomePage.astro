@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import portrait from "../assets/profilbild.png";
+import logo from "../assets/logo1.png";
 
 import type { PageContent } from "../data/content";
 import { site } from "../data/site";
@@ -24,7 +25,11 @@ const homeUrl =
             href={homeUrl}
             aria-label="Borys Lomazov"
         >
-            BL
+            <Image
+                src={logo}
+                alt=""
+                class="brand-logo"
+            />
         </a>
 
         <nav

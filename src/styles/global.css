@@ -1,17 +1,24 @@
 :root {
-    --color-background: #f6f7f3;
-    --color-surface: #ffffff;
+    --color-background: #f1f1f1;
+    --color-surface: #f8f7f6;
 
-    --color-text: #171918;
-    --color-muted: #686d69;
-    --color-border: #dcdeda;
+    --color-text: #242221;
+    --color-muted: #6f6965;
+    --color-border: #d7d0cc;
 
-    --color-accent: #476d68;
-    --color-accent-dark: #355550;
+    --color-accent: #bdb1a9;
+    --color-accent-dark: #786d67;
 
     --content-width: 73.75rem;
     --page-padding: 1.25rem;
     --header-height: 4.75rem;
+
+    --font-serif:
+        Georgia,
+        Cambria,
+        "Times New Roman",
+        Times,
+        serif;
 
     --font-sans:
         Inter,
@@ -49,6 +56,42 @@ body {
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+h1,
+.section-content > h2,
+.hero-role {
+    font-family: var(--font-serif);
+}
+
+h1 {
+    margin: 0;
+
+    font-size: clamp(3rem, 13vw, 6.2rem);
+    font-weight: 400;
+    line-height: 0.91;
+
+    letter-spacing: -0.045em;
+}
+
+.section-content > h2 {
+    margin: 0;
+
+    font-size: clamp(1.8rem, 7vw, 2.7rem);
+    font-weight: 400;
+    line-height: 1.08;
+
+    letter-spacing: -0.025em;
+}
+
+.hero-role {
+    margin: 1.7rem 0 0;
+
+    font-size: clamp(1.65rem, 6vw, 2.6rem);
+    font-weight: 400;
+    line-height: 1.1;
+
+    letter-spacing: -0.02em;
 }
 
 a {
@@ -121,20 +164,21 @@ a:focus-visible {
 }
 
 .brand {
-    width: 2.6rem;
-    height: 2.6rem;
-
     display: flex;
     align-items: center;
-    justify-content: center;
 
     flex: 0 0 auto;
 
-    border: 1px solid var(--color-text);
+    height: 2.6rem;
+}
 
-    font-size: 0.78rem;
-    font-weight: 750;
-    letter-spacing: 0.08em;
+.brand-logo {
+    width: auto;
+    height: 3.5rem;
+
+    display: block;
+
+    object-fit: contain;
 }
 
 .desktop-nav {
@@ -168,7 +212,7 @@ a:focus-visible {
 .eyebrow {
     margin: 0 0 1.5rem;
 
-    color: var(--color-accent);
+    color: var(--color-accent-dark);
 
     font-size: 0.7rem;
     font-weight: 750;

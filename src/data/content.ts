@@ -62,10 +62,7 @@ export const content = {
             currentResearch: {
                 title: "From Architectural Plans to Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
                 meta: "Manuscript in internal review",
-            },
-
-            orcidLabel: "ORCID",
-            orcidHref: site.orcid.href,
+            }
         },
 
         expertise: {
@@ -136,6 +133,11 @@ export const content = {
                         : "to be added",
                     href: site.linkedin.href,
                 },
+                {
+                    label: "ORCID",
+                    value: site.orcid.label,
+                    href: site.orcid.href,
+                },
             ],
         },
 
@@ -203,10 +205,7 @@ export const content = {
             currentResearch: {
                 title: "From Architectural Plans to Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
                 meta: "Manuscript in internal review",
-            },
-
-            orcidLabel: "ORCID",
-            orcidHref: site.orcid.href,
+            }
         },
 
         expertise: {
@@ -276,6 +275,11 @@ export const content = {
                         ? site.linkedin.label
                         : "wird ergänzt",
                     href: site.linkedin.href,
+                },
+                {
+                    label: "ORCID",
+                    value: site.orcid.label,
+                    href: site.orcid.href,
                 },
             ],
         },
