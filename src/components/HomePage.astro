@@ -1,0 +1,422 @@
+---
+import { Image } from "astro:assets";
+import portrait from "../assets/profilbild.png";
+
+import type { PageContent } from "../data/content";
+import { site } from "../data/site";
+
+interface Props {
+    content: PageContent;
+}
+
+const { content } = Astro.props;
+
+const homeUrl =
+    content.language === "de"
+        ? "/de/"
+        : "/";
+---
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a
+            class="brand"
+            href={homeUrl}
+            aria-label="Borys Lomazov"
+        >
+            BL
+        </a>
+
+        <nav
+            class="desktop-nav"
+            aria-label={
+                content.language === "de"
+                    ? "Hauptnavigation"
+                    : "Main navigation"
+            }
+        >
+            <a href="#profile">
+                {content.navigation.profile}
+            </a>
+
+            <a href="#research">
+                {content.navigation.research}
+            </a>
+
+            <a href="#expertise">
+                {content.navigation.expertise}
+            </a>
+
+            <a href="#documents">
+                {content.navigation.documents}
+            </a>
+
+            <a href="#contact">
+                {content.navigation.contact}
+            </a>
+        </nav>
+
+        <a
+            class="language-switch"
+            href={content.languageUrl}
+        >
+            {content.languageLabel}
+        </a>
+    </div>
+</header>
+
+<main id="main-content">
+
+    <!-- Hero -->
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    {content.hero.eyebrow}
+                </p>
+
+                <h1>
+                    {content.hero.name}
+                </h1>
+
+                <p class="hero-role">
+                    {content.hero.role}
+                </p>
+
+                <div class="hero-meta">
+                    <p>
+                        {content.hero.education}
+                    </p>
+
+                    <p>
+                        {content.hero.experience}
+                    </p>
+                </div>
+
+                <div class="hero-actions">
+                    <a
+                        class="button button-primary"
+                        href="#profile"
+                    >
+                        {content.hero.primaryAction}
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="#documents"
+                    >
+                        {content.hero.secondaryAction}
+                    </a>
+                </div>
+            </div>
+
+            <div class="portrait">
+                <Image
+                    src={portrait}
+                    alt={
+                        content.language === "de"
+                            ? "Porträt von Borys Lomazov"
+                            : "Portrait of Borys Lomazov"
+                    }
+                    class="portrait-image"
+                />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Profile -->
+
+    <div class="container">
+        <section
+            class="content-section"
+            id="profile"
+        >
+            <div class="section-number">
+                {content.profile.number}
+            </div>
+
+            <div class="section-content section-narrow">
+                <h2>
+                    {content.profile.title}
+                </h2>
+
+                <p class="lead-text">
+                    {content.profile.text}
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Research -->
+
+        <section
+            class="content-section"
+            id="research"
+        >
+            <div class="section-number">
+                {content.research.number}
+            </div>
+
+            <div class="section-content">
+                <h2>
+                    {content.research.title}
+                </h2>
+
+                <div class="research-introduction">
+                    {
+                        content.research.paragraphs.map(
+                            (paragraph) => (
+                                <p>{paragraph}</p>
+                            )
+                        )
+                    }
+                </div>
+
+                <div class="subsection">
+                    <h3>
+                        {content.research.publicationsTitle}
+                    </h3>
+
+                    <div class="publication-list">
+                        {
+                            content.research.publications.map(
+                                (publication) => (
+                                    <article class="publication">
+                                        <div>
+                                            <h4>
+                                                {publication.title}
+                                            </h4>
+
+                                            <p>
+                                                {publication.meta}
+                                            </p>
+                                        </div>
+
+                                        {
+                                            publication.href && (
+                                                <a
+                                                    class="text-link"
+                                                    href={publication.href}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    DOI ↗
+                                                </a>
+                                            )
+                                        }
+                                    </article>
+                                )
+                            )
+                        }
+                    </div>
+                </div>
+
+                <div class="subsection current-research">
+                    <h3>
+                        {content.research.currentResearchTitle}
+                    </h3>
+
+                    <article class="publication">
+                        <div>
+                            <h4>
+                                {content.research.currentResearch.title}
+                            </h4>
+
+                            <p>
+                                {content.research.currentResearch.meta}
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="research-footer">
+                    {
+                        content.research.orcidHref ? (
+                            <a
+                                class="text-link"
+                                href={content.research.orcidHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {content.research.orcidLabel} ↗
+                            </a>
+                        ) : (
+                            <span class="text-link text-link-disabled">
+                                {content.research.orcidLabel}
+                            </span>
+                        )
+                    }
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Expertise -->
+
+        <section
+            class="content-section"
+            id="expertise"
+        >
+            <div class="section-number">
+                {content.expertise.number}
+            </div>
+
+            <div class="section-content">
+                <h2>
+                    {content.expertise.title}
+                </h2>
+
+                <div class="expertise-grid">
+                    {
+                        content.expertise.items.map(
+                            (item) => (
+                                <article class="expertise-item">
+                                    <h3>
+                                        {item.title}
+                                    </h3>
+
+                                    <p>
+                                        {item.details}
+                                    </p>
+                                </article>
+                            )
+                        )
+                    }
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Documents -->
+
+        <section
+            class="content-section"
+            id="documents"
+        >
+            <div class="section-number">
+                {content.documents.number}
+            </div>
+
+            <div class="section-content">
+                <h2>
+                    {content.documents.title}
+                </h2>
+
+                <div class="document-list">
+                    {
+                        content.documents.items.map(
+                            (document) => (
+                                <article class="document-item">
+                                    <div>
+                                        <h3>
+                                            {document.title}
+                                        </h3>
+
+                                        <p>
+                                            {document.meta}
+                                        </p>
+                                    </div>
+
+                                    {
+                                        document.href ? (
+                                            <a
+                                                class="text-link"
+                                                href={document.href}
+                                                download
+                                            >
+                                                {document.action} ↓
+                                            </a>
+                                        ) : (
+                                            <span
+                                                class="text-link
+                                                       text-link-disabled"
+                                            >
+                                                {document.action}
+                                            </span>
+                                        )
+                                    }
+                                </article>
+                            )
+                        )
+                    }
+                </div>
+
+                <p class="document-note">
+                    {content.documents.note}
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+
+        <section
+            class="content-section"
+            id="contact"
+        >
+            <div class="section-number">
+                {content.contact.number}
+            </div>
+
+            <div class="section-content">
+                <h2>
+                    {content.contact.title}
+                </h2>
+
+                <div class="contact-list">
+                    {
+                        content.contact.items.map(
+                            (item) => (
+                                <div class="contact-item">
+                                    <span class="contact-label">
+                                        {item.label}
+                                    </span>
+
+                                    {
+                                        item.href ? (
+                                            <a
+                                                class="text-link"
+                                                href={item.href}
+                                                target={
+                                                    item.href.startsWith("http")
+                                                        ? "_blank"
+                                                        : undefined
+                                                }
+                                                rel={
+                                                    item.href.startsWith("http")
+                                                        ? "noopener noreferrer"
+                                                        : undefined
+                                                }
+                                            >
+                                                {item.value}
+                                            </a>
+                                        ) : (
+                                            <span>
+                                                {item.value}
+                                            </span>
+                                        )
+                                    }
+                                </div>
+                            )
+                        )
+                    }
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>
+            © {new Date().getFullYear()} Borys Lomazov
+        </span>
+
+        <span>
+            {content.footer}
+        </span>
+    </div>
+</footer>

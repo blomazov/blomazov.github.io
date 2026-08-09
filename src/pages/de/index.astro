@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HomePage from "../../components/HomePage.astro";
+import { content } from "../../data/content";
+
+const page = content.de;
+---
+
+<BaseLayout
+    lang="de"
+    title="Borys Lomazov — Data Science & Forschung"
+    description="Persönliche Website von Borys Lomazov. Data Science und angewandte Forschung."
+>
+    <HomePage content={page} />
+</BaseLayout>
