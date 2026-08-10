@@ -21,7 +21,7 @@ export const content = {
             education: "B. Sc. Computer Science · M. Sc. Data Science (ongoing)",
             experience:
                 "Nearly two years of experience in applied research and development.",
-            primaryAction: "Profile",
+            primaryAction: "Contact",
             secondaryAction: "Curriculum Vitae",
         },
 
@@ -73,7 +73,7 @@ export const content = {
                 {
                     title: "Data Science & Statistical Modeling",
                     details:
-                        "Exploratory Data Analysis · Data Preprocessing · Feature Engineering · Multivariate Statistics · Time Series Analysis",
+                        "Exploratory Data Analysis · Data Preprocessing · Feature Engineering · Statistical Modeling · Multivariate Statistics · Time Series Analysis · Business Intelligence",
                 },
                 {
                     title: "Machine Learning & AI",
@@ -83,12 +83,12 @@ export const content = {
                 {
                     title: "ML Engineering & Software Systems",
                     details:
-                        "Continuous Integration · ML Pipelines & Tooling · Model Analysis · Distributed Systems · Databases & Backend Integration",
+                        "Continuous Integration · ML Pipelines & Tooling · Model Analysis · Unix/Linux · Containerization · Distributed Systems · Databases",
                 },
                 {
                     title: "Applied Research & Computer Vision",
                     details:
-                        "Method Development · Experimental Evaluation · Image Processing · Document Analysis · Scientific Publications",
+                        "Method Development · Experimental Evaluation · Image Processing · Document Analysis · Digital Twins · Scientific Publications",
                 },
             ],
         },
@@ -164,7 +164,7 @@ export const content = {
             education: "B. Sc. Informatik · M. Sc. Data Science (laufend)",
             experience:
                 "Knapp zwei Jahre Erfahrung in angewandter Forschung und Entwicklung.",
-            primaryAction: "Profil",
+            primaryAction: "Contact",
             secondaryAction: "Lebenslauf",
         },
 
@@ -216,7 +216,7 @@ export const content = {
                 {
                     title: "Data Science & Statistical Modeling",
                     details:
-                        "Explorative Datenanalyse · Datenvorverarbeitung · Feature Engineering · Multivariate Statistik · Zeitreihenanalyse",
+                        "Explorative Datenanalyse · Datenvorverarbeitung · Feature Engineering · Statistische Modellierung · Multivariate Statistik · Zeitreihenanalyse · Business Intelligence",
                 },
                 {
                     title: "Machine Learning & AI",
@@ -226,12 +226,12 @@ export const content = {
                 {
                     title: "ML Engineering & Software Systems",
                     details:
-                        "Continuous Integration · ML Pipelines & Tooling · Modellanalyse · Verteilte Systeme · Datenbanken & Backend-Integration",
+                        "Continuous Integration · ML Pipelines & Tooling · Modellanalyse · Unix/Linux · Containerisierung · Verteilte Systeme · Datenbanken",
                 },
                 {
                     title: "Applied Research & Computer Vision",
                     details:
-                        "Methodenentwicklung · experimentelle Evaluation · Bildverarbeitung · Document Analysis · wissenschaftliche Publikationen",
+                        "Methodenentwicklung · experimentelle Evaluation · Bildverarbeitung · Document Analysis · Digital Twins · wissenschaftliche Publikationen",
                 },
             ],
         },
