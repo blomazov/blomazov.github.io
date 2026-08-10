@@ -71,24 +71,24 @@ export const content = {
 
             items: [
                 {
-                    title: "Data Science & Machine Learning",
+                    title: "Data Science & Statistical Modeling",
                     details:
-                        "Data Analysis · Modeling · Feature Engineering · Model Evaluation · Hyperparameter Optimization",
+                        "Exploratory Data Analysis · Data Preprocessing · Feature Engineering · Multivariate Statistics · Time Series Analysis",
                 },
                 {
-                    title: "ML Engineering",
+                    title: "Machine Learning & AI",
                     details:
-                        "Continuous Integration · ML Pipelines & Tooling · Model Analysis",
+                        "Decision Trees & Ensembles · SVM · Neural Networks & Transformers · Deep Reinforcement Learning · Model Evaluation & Optimization",
                 },
                 {
-                    title: "Computer Vision & Document Analysis",
+                    title: "ML Engineering & Software Systems",
                     details:
-                        "Image Processing · Template Matching · Symbol Recognition · Technical Drawings",
+                        "Continuous Integration · ML Pipelines & Tooling · Model Analysis · Distributed Systems · Databases & Backend Integration",
                 },
                 {
-                    title: "Applied Research",
+                    title: "Applied Research & Computer Vision",
                     details:
-                        "Method Development · Experimental Evaluation · Scientific Publications",
+                        "Method Development · Experimental Evaluation · Image Processing · Document Analysis · Scientific Publications",
                 },
             ],
         },
@@ -214,24 +214,24 @@ export const content = {
 
             items: [
                 {
-                    title: "Data Science & Machine Learning",
+                    title: "Data Science & Statistical Modeling",
                     details:
-                        "Datenanalyse · Modellierung · Feature Engineering · Modellevaluation · Hyperparameteroptimierung",
+                        "Explorative Datenanalyse · Datenvorverarbeitung · Feature Engineering · Multivariate Statistik · Zeitreihenanalyse",
                 },
                 {
-                    title: "ML Engineering",
+                    title: "Machine Learning & AI",
                     details:
-                        "Continuous Integration · ML Pipelines & Tooling · Modellanalyse",
+                        "Entscheidungsbäume & Ensembles · SVM · Neuronale Netze & Transformer · Deep Reinforcement Learning · Modellevaluation & Optimierung",
                 },
                 {
-                    title: "Computer Vision & Document Analysis",
+                    title: "ML Engineering & Software Systems",
                     details:
-                        "Bildverarbeitung · Template Matching · Symbolerkennung · technische Zeichnungen",
+                        "Continuous Integration · ML Pipelines & Tooling · Modellanalyse · Verteilte Systeme · Datenbanken & Backend-Integration",
                 },
                 {
-                    title: "Applied Research",
+                    title: "Applied Research & Computer Vision",
                     details:
-                        "Methodenentwicklung · experimentelle Evaluation · wissenschaftliche Publikationen",
+                        "Methodenentwicklung · experimentelle Evaluation · Bildverarbeitung · Document Analysis · wissenschaftliche Publikationen",
                 },
             ],
         },
