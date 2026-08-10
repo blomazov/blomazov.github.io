@@ -73,7 +73,7 @@ export const content = {
                 {
                     title: "Data Science & Statistical Modeling",
                     details:
-                        "Exploratory Data Analysis · Data Preprocessing · Feature Engineering · Statistical Modeling · Multivariate Statistics · Time Series Analysis · Business Intelligence",
+                        "Exploratory Data Analysis · Data Preprocessing · Feature Engineering · Multivariate Statistics · Time Series Analysis · Business Intelligence",
                 },
                 {
                     title: "Machine Learning & AI",
@@ -216,7 +216,7 @@ export const content = {
                 {
                     title: "Data Science & Statistical Modeling",
                     details:
-                        "Explorative Datenanalyse · Datenvorverarbeitung · Feature Engineering · Statistische Modellierung · Multivariate Statistik · Zeitreihenanalyse · Business Intelligence",
+                        "Explorative Datenanalyse · Datenvorverarbeitung · Feature Engineering · Multivariate Statistik · Zeitreihenanalyse · Business Intelligence",
                 },
                 {
                     title: "Machine Learning & AI",
