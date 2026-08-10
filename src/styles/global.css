@@ -508,13 +508,25 @@ h1 {
    Links
    ========================================================= */
 
+.orcid-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.orcid-link img {
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+}
+
 .text-link {
     flex: 0 0 auto;
 
     color: var(--color-light);
 
     font-family: var(--font-sans);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 400;
 }
 

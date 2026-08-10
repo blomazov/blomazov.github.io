@@ -4,7 +4,6 @@ import portrait from "../assets/profilbild.png";
 import logo from "../assets/logo2.png";
 
 import type { PageContent } from "../data/content";
-import { site } from "../data/site";
 
 interface Props {
     content: PageContent;
@@ -235,25 +234,6 @@ const homeUrl =
                         </div>
                     </article>
                 </div>
-
-                <div class="research-footer">
-                    {
-                        content.research.orcidHref ? (
-                            <a
-                                class="text-link"
-                                href={content.research.orcidHref}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {content.research.orcidLabel} ↗
-                            </a>
-                        ) : (
-                            <span class="text-link text-link-disabled">
-                                {content.research.orcidLabel}
-                            </span>
-                        )
-                    }
-                </div>
             </div>
         </section>
 
@@ -382,7 +362,11 @@ const homeUrl =
                                     {
                                         item.href ? (
                                             <a
-                                                class="text-link"
+                                                class:list={[
+                                                    "text-link",
+                                                    item.href.startsWith("https://orcid.org/")
+                                                        && "orcid-link",
+                                                ]}
                                                 href={item.href}
                                                 target={
                                                     item.href.startsWith("http")
@@ -390,12 +374,16 @@ const homeUrl =
                                                         : undefined
                                                 }
                                                 rel={
-                                                    item.href.startsWith("http")
-                                                        ? "noopener noreferrer"
-                                                        : undefined
+                                                    item.href.startsWith("https://orcid.org/")
+                                                        ? "me noopener noreferrer"
+                                                        : item.href.startsWith("http")
+                                                            ? "noopener noreferrer"
+                                                            : undefined
                                                 }
                                             >
-                                                {item.value}
+                                                <span>
+                                                    {item.value}
+                                                </span>
                                             </a>
                                         ) : (
                                             <span>

@@ -128,9 +128,7 @@ export const content = {
                 },
                 {
                     label: "LinkedIn",
-                    value: site.linkedin.href
-                        ? site.linkedin.label
-                        : "to be added",
+                    value: site.linkedin.href,
                     href: site.linkedin.href,
                 },
                 {
