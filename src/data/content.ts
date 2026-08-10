@@ -29,7 +29,7 @@ export const content = {
             number: "01",
             title: "Profile",
             text:
-                "I studied Computer Science at Hochschule Darmstadt / University of Applied Sciences and subsequently started a Master's degree in Data Science. Alongside my Master's studies, I worked for 21 months as a research associate in a research and development project.",
+                "I studied Computer Science at Darmstadt University of Applied Sciences and subsequently started a Master's degree in Data Science. Alongside my Master's studies, I worked for 21 months as a research associate in a research and development project.",
         },
 
         research: {
@@ -41,18 +41,17 @@ export const content = {
                 "My main responsibility was symbol detection in 2D legacy plans. I independently developed an approach combining classical image processing and machine learning to provide information for subsequent semantic processing of the plans.",
             ],
 
-            publicationsTitle: "Selected Publications",
+            publicationsTitle: "Publications",
 
             publications: [
                 {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
-                    meta: "WSCG 2026 · Published",
+                    meta: "WSCG 2026 · Accepted / Forthcoming",
                     href: site.publications.wscg2026,
                 },
                 {
                     title: "AI-Enhanced Template Matching for Symbol Detection in Technical Drawings",
-                    meta:
-                        "Future Technologies Conference 2026 · Accepted / Forthcoming",
+                    meta: "FTC 2026 · Accepted / Forthcoming",
                     href: site.publications.ftc2026,
                 },
             ],
@@ -62,6 +61,7 @@ export const content = {
             currentResearch: {
                 title: "From Architectural Plans to Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
                 meta: "Manuscript in internal review",
+                href: site.publications.journal2026,
             }
         },
 
@@ -99,7 +99,7 @@ export const content = {
 
             items: [
                 {
-                    title: "Curriculum Vitae",
+                    title: "Curriculum Vitae (Maintenance)",
                     meta: "PDF · English",
                     action: "Download",
                     href: site.documents.cvEnglish,
@@ -184,27 +184,27 @@ export const content = {
                 "Mein eigener Schwerpunkt lag auf der Symbolerkennung in 2D-Bestandsplänen. Hierfür entwickelte ich eigenverantwortlich ein Verfahren, das klassische Bildverarbeitung und Machine Learning kombiniert und damit Informationen für die weitere semantische Verarbeitung der Pläne bereitstellt.",
             ],
 
-            publicationsTitle: "Selected Publications",
+            publicationsTitle: "Publikationen",
 
             publications: [
                 {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
-                    meta: "WSCG 2026 · First Author · Published",
+                    meta: "WSCG 2026 · Accepted / Forthcoming",
                     href: site.publications.wscg2026,
                 },
                 {
                     title: "AI-Enhanced Template Matching for Symbol Detection in Technical Drawings",
-                    meta:
-                        "Future Technologies Conference 2026 · First Author · Accepted / Forthcoming",
+                    meta: "FTC 2026 · Accepted / Forthcoming",
                     href: site.publications.ftc2026,
                 },
             ],
 
-            currentResearchTitle: "Current Research",
+            currentResearchTitle: "Aktuelle Arbeiten",
 
             currentResearch: {
                 title: "From Architectural Plans to Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
                 meta: "Manuscript in internal review",
+                href: site.publications.journal2026,
             }
         },
 
@@ -244,11 +244,11 @@ export const content = {
                 {
                     title: "Lebenslauf",
                     meta: "PDF · Deutsch",
-                    action: "Herunterladen",
+                    action: "Download",
                     href: site.documents.cvGerman,
                 },
                 {
-                    title: "Curriculum Vitae",
+                    title: "Curriculum Vitae (Maintenance)",
                     meta: "PDF · English",
                     action: "Download",
                     href: site.documents.cvEnglish,
