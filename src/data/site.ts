@@ -10,7 +10,7 @@ export const site = {
     },
 
     linkedin: {
-        label: "Borys Lomazov",
+        label: "linkedin.com/in/borys-lomazov",
         href: "https://www.linkedin.com/in/borys-lomazov",
     },
 
