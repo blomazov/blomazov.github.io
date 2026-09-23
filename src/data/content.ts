@@ -46,7 +46,7 @@ export const content = {
             publications: [
                 {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
-                    meta: "WSCG 2026 · Accepted / Forthcoming",
+                    meta: "WSCG 2026 · Published",
                     href: site.publications.wscg2026,
                 },
                 {
@@ -187,7 +187,7 @@ export const content = {
             publications: [
                 {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
-                    meta: "WSCG 2026 · Accepted / Forthcoming",
+                    meta: "WSCG 2026 · Published",
                     href: site.publications.wscg2026,
                 },
                 {

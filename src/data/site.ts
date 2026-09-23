@@ -20,7 +20,7 @@ export const site = {
     },
 
     publications: {
-        wscg2026: null as string | null,
+        wscg2026: "https://doi.org/10.24132/CSRN.2026-D73",
         ftc2026: null as string | null,
         journal2026: null as string | null,
     },
