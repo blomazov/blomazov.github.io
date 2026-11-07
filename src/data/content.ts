@@ -29,7 +29,7 @@ export const content = {
             number: "01",
             title: "Profile",
             text:
-                "I studied Computer Science at Darmstadt University of Applied Sciences and subsequently started a Master's degree in Data Science. Alongside my Master's studies, I worked for 21 months as a research associate in a research and development project.",
+                "I hold a B. Sc. in Computer Science from Darmstadt University of Applied Sciences and am currently pursuing an M. Sc. in Data Science. Alongside my studies, I spent 21 months working as a research associate in an applied research and development project.",
         },
 
         research: {
@@ -37,8 +37,8 @@ export const content = {
             title: "Research & Publications",
 
             paragraphs: [
-                "My previous research focused on the automated digitization of technical architectural drawings as a foundation for digital building models and Digital Twins.",
-                "My main responsibility was symbol detection in 2D legacy plans. I independently developed an approach combining classical image processing and machine learning to provide information for subsequent semantic processing of the plans.",
+                "My previous research focused on the automated digitization of legacy architectural drawings, particularly raster-to-vector processing and symbol detection as early steps toward structured digital building representations.",
+                "Within this pipeline, I was responsible for symbol detection in 2D legacy floor plans and developed an approach combining classical image processing with machine learning. My current research extends this perspective by examining the broader transformation path from architectural plans through BIM/IFC-based building models toward Digital Twin readiness.",
             ],
 
             publicationsTitle: "Publications",
@@ -46,21 +46,27 @@ export const content = {
             publications: [
                 {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
-                    meta: "WSCG 2026 · Published",
+                    meta: "WSCG 2026 · First Author · Published",
+                    description:
+                        "Presents a modular raster-to-vector pipeline and an evaluation chain designed for real-world architectural drawings where comprehensive ground truth is limited or unavailable.",
                     href: site.publications.wscg2026,
                 },
                 {
                     title: "AI-Enhanced Template Matching for Symbol Detection in Technical Drawings",
-                    meta: "FTC 2026 · Accepted / Forthcoming",
+                    meta: "FTC 2026 · First Author · Presented · Honorable Mention",
+                    description:
+                       "Combines template matching with an XGBoost classifier whose features encode the relationship between each candidate region and the queried template rather than local patch appearance, outperforming neural patch baselines without using raw image patches.",
                     href: site.publications.ftc2026,
                 },
             ],
 
-            currentResearchTitle: "Current Research",
+            currentResearchTitle: "Current Manuscript",
 
             currentResearch: {
-                title: "From Architectural Plans to Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
-                meta: "Manuscript in internal review",
+                title: "From Architectural Plans to Digital Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
+                meta: "ITcon · Sole Author · Submitted ",
+                description:
+                    "A state-of-the-art review of the complete transformation chain from 2D architectural plans through raster-to-vector conversion and 3D model generation to BIM/IFC integration and Digital Twin readiness.",
                 href: site.publications.journal2026,
             }
         },
@@ -128,7 +134,7 @@ export const content = {
                 },
                 {
                     label: "LinkedIn",
-                    value: site.linkedin.href,
+                    value: site.linkedin.label,
                     href: site.linkedin.href,
                 },
                 {
@@ -162,7 +168,7 @@ export const content = {
             education: "B. Sc. Informatik · M. Sc. Data Science (laufend)",
             experience:
                 "Knapp zwei Jahre Erfahrung in angewandter Forschung und Entwicklung.",
-            primaryAction: "Contact",
+            primaryAction: "Kontakt",
             secondaryAction: "Lebenslauf",
         },
 
@@ -170,7 +176,7 @@ export const content = {
             number: "01",
             title: "Profil",
             text:
-                "Ich habe Informatik an der Hochschule Darmstadt studiert und anschließend den Master Data Science begonnen. Parallel zum Masterstudium war ich 21 Monate als wissenschaftlicher Mitarbeiter in einem Forschungs- und Entwicklungsprojekt tätig.",
+                "Ich habe einen B. Sc. in Informatik an der Hochschule Darmstadt abgeschlossen und absolviere derzeit den M. Sc. Data Science. Parallel zum Studium war ich 21 Monate als wissenschaftlicher Mitarbeiter in einem angewandten Forschungs- und Entwicklungsprojekt tätig.",
         },
 
         research: {
@@ -178,8 +184,8 @@ export const content = {
             title: "Forschung & Publikationen",
 
             paragraphs: [
-                "Im Forschungsprojekt beschäftigte ich mich mit der automatisierten Digitalisierung technischer Bauzeichnungen als Grundlage für digitale Gebäudemodelle und Digital Twins.",
-                "Mein eigener Schwerpunkt lag auf der Symbolerkennung in 2D-Bestandsplänen. Hierfür entwickelte ich eigenverantwortlich ein Verfahren, das klassische Bildverarbeitung und Machine Learning kombiniert und damit Informationen für die weitere semantische Verarbeitung der Pläne bereitstellt.",
+                "Meine bisherige angewandte Forschung konzentrierte sich auf die automatisierte Digitalisierung bestehender Architekturpläne, insbesondere auf Raster-to-Vector-Verarbeitung und Symbolerkennung als frühe Schritte hin zu strukturierten digitalen Gebäuderepräsentationen.",
+                "Innerhalb dieser Pipeline verantwortete ich die Symbolerkennung in 2D-Bestandsplänen und entwickelte hierfür ein Verfahren, das klassische Bildverarbeitung mit Machine Learning kombiniert. Meine aktuelle Forschung erweitert diese Perspektive um die übergeordnete Transformationskette von Architekturplänen über BIM-/IFC-basierte Gebäudemodelle bis hin zur Digital-Twin-Readiness.",
             ],
 
             publicationsTitle: "Publikationen",
@@ -187,23 +193,29 @@ export const content = {
             publications: [
                 {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
-                    meta: "WSCG 2026 · Published",
+                    meta: "WSCG 2026 · Erstautor · Veröffentlicht",
+                    description:
+                        "Stellt eine modulare Raster-to-Vector-Pipeline sowie eine Evaluationskette für reale Architekturpläne vor, bei denen umfassende Ground Truth nur eingeschränkt oder nicht verfügbar ist.",
                     href: site.publications.wscg2026,
                 },
                 {
                     title: "AI-Enhanced Template Matching for Symbol Detection in Technical Drawings",
-                    meta: "FTC 2026 · Accepted / Forthcoming",
+                    meta: "FTC 2026 · Erstautor · Präsentiert · Honorable Mention",
+                    description:
+                        "Kombiniert Template Matching mit einem XGBoost-Klassifikator, dessen Merkmale die Ähnlichkeit einer Kandidatenregion zum jeweils abgefragten Template abbilden statt lediglich deren lokale Bilderscheinung. Dadurch übertrifft der Ansatz neuronale Patch-Baselines, ohne Rohbild-Patches direkt zu verarbeiten.",
                     href: site.publications.ftc2026,
                 },
             ],
 
-            currentResearchTitle: "Aktuelle Arbeiten",
+            currentResearchTitle: "Aktuelles Manuskript",
 
             currentResearch: {
-                title: "From Architectural Plans to Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
-                meta: "Manuscript in internal review",
+                title: "From Architectural Plans to Digital Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
+                meta: "ITcon · Alleinautor · Eingereicht",
+                description:
+                    "Eine State-of-the-Art-Analyse der vollständigen Transformationskette von 2D-Architekturplänen über Raster-to-Vector-Konvertierung und 3D-Modellerzeugung bis hin zur BIM/IFC-Integration und Digital-Twin-Readiness.",
                 href: site.publications.journal2026,
-            }
+            },
         },
 
         expertise: {
