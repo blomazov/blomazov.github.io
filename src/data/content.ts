@@ -20,7 +20,7 @@ export const content = {
             role: "Data Scientist",
             education: "B. Sc. Computer Science · M. Sc. Data Science (ongoing)",
             experience:
-                "Nearly two years of experience in applied research and development.",
+                "Nearly two years of experience in research and development.",
             primaryAction: "Contact",
             secondaryAction: "Curriculum Vitae",
         },
@@ -167,7 +167,7 @@ export const content = {
             role: "Data Scientist",
             education: "B. Sc. Informatik · M. Sc. Data Science (laufend)",
             experience:
-                "Knapp zwei Jahre Erfahrung in angewandter Forschung und Entwicklung.",
+                "Knapp zwei Jahre Erfahrung in Forschung und Entwicklung.",
             primaryAction: "Kontakt",
             secondaryAction: "Lebenslauf",
         },
