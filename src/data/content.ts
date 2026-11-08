@@ -29,7 +29,7 @@ export const content = {
             number: "01",
             title: "Profile",
             text:
-                "I hold a B. Sc. in Computer Science from Darmstadt University of Applied Sciences and am currently pursuing an M. Sc. in Data Science. Alongside my studies, I spent 21 months working as a research associate in an applied research and development project.",
+                "I hold a B. Sc. in Computer Science from Darmstadt University of Applied Sciences and am currently pursuing an M. Sc. in Data Science. Alongside my studies, I spent 21 months working as a research associate on a research and development project.",
         },
 
         research: {
@@ -37,8 +37,8 @@ export const content = {
             title: "Research & Publications",
 
             paragraphs: [
-                "My previous research focused on the automated digitization of legacy architectural drawings, particularly raster-to-vector processing and symbol detection as early steps toward structured digital building representations.",
-                "Within this pipeline, I was responsible for symbol detection in 2D legacy floor plans and developed an approach combining classical image processing with machine learning. My current research extends this perspective by examining the broader transformation path from architectural plans through BIM/IFC-based building models toward Digital Twin readiness.",
+                "My previous research addressed the automated digitization of legacy architectural drawings, particularly symbol detection and raster-to-vector processing. My main contribution was a symbol-detection approach for 2D legacy floor plans that combines classical image processing with machine learning. The resulting work received an Honorable Mention at FTC 2026.",
+                "A state-of-the-art manuscript currently under review examines the broader transformation from architectural plans through vector representations and 3D building models to BIM/IFC representations and, ultimately, Digital Twin readiness.",
             ],
 
             publicationsTitle: "Publications",
@@ -48,14 +48,14 @@ export const content = {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
                     meta: "WSCG 2026 · First Author · Published",
                     description:
-                        "Presents a modular raster-to-vector pipeline and an evaluation chain designed for real-world architectural drawings where comprehensive ground truth is limited or unavailable.",
+                        "Presents a modular raster-to-vector pipeline for heterogeneous and often degraded legacy architectural drawings, together with an evidence chain for evaluation where comprehensive ground truth is limited or unavailable.",
                     href: site.publications.wscg2026,
                 },
                 {
                     title: "AI-Enhanced Template Matching for Symbol Detection in Technical Drawings",
                     meta: "FTC 2026 · First Author · Presented · Honorable Mention",
                     description:
-                       "Combines template matching with an XGBoost classifier whose features encode the relationship between each candidate region and the queried template rather than local patch appearance, outperforming neural patch baselines without using raw image patches.",
+                       "Combines template matching with an XGBoost classifier operating in feature space, where each candidate is represented by its similarity to the queried template rather than local patch appearance, outperforming neural patch baselines.",
                     href: site.publications.ftc2026,
                 },
             ],
@@ -64,9 +64,9 @@ export const content = {
 
             currentResearch: {
                 title: "From Architectural Plans to Digital Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
-                meta: "ITcon · Sole Author · Submitted ",
+                meta: "ITcon · Sole Author · Under Review",
                 description:
-                    "A state-of-the-art review of the complete transformation chain from 2D architectural plans through raster-to-vector conversion and 3D model generation to BIM/IFC integration and Digital Twin readiness.",
+                    "Reviews the state of the art across the complete transformation chain from 2D architectural plans through raster-to-vector conversion, 3D model generation, and BIM/IFC integration to Digital Twin readiness, and introduces a maturity framework, analytical pipeline, and eight comparison dimensions for positioning heterogeneous contributions across these stages.",
                 href: site.publications.journal2026,
             }
         },
@@ -176,7 +176,7 @@ export const content = {
             number: "01",
             title: "Profil",
             text:
-                "Ich habe einen B. Sc. in Informatik an der Hochschule Darmstadt abgeschlossen und absolviere derzeit den M. Sc. Data Science. Parallel zum Studium war ich 21 Monate als wissenschaftlicher Mitarbeiter in einem angewandten Forschungs- und Entwicklungsprojekt tätig.",
+                "Ich habe einen B. Sc. in Informatik an der Hochschule Darmstadt abgeschlossen und absolviere derzeit den M. Sc. Data Science. Parallel zum Studium war ich 21 Monate als wissenschaftlicher Mitarbeiter in einem Forschungs- und Entwicklungsprojekt tätig.",
         },
 
         research: {
@@ -184,9 +184,10 @@ export const content = {
             title: "Forschung & Publikationen",
 
             paragraphs: [
-                "Meine bisherige angewandte Forschung konzentrierte sich auf die automatisierte Digitalisierung bestehender Architekturpläne, insbesondere auf Raster-to-Vector-Verarbeitung und Symbolerkennung als frühe Schritte hin zu strukturierten digitalen Gebäuderepräsentationen.",
-                "Innerhalb dieser Pipeline verantwortete ich die Symbolerkennung in 2D-Bestandsplänen und entwickelte hierfür ein Verfahren, das klassische Bildverarbeitung mit Machine Learning kombiniert. Meine aktuelle Forschung erweitert diese Perspektive um die übergeordnete Transformationskette von Architekturplänen über BIM-/IFC-basierte Gebäudemodelle bis hin zur Digital-Twin-Readiness.",
+                "Meine bisherige Forschung befasste sich mit der automatisierten Digitalisierung bestehender Architekturpläne, insbesondere mit Symbolerkennung und Raster-to-Vector Transformation. Mein eigener Schwerpunkt lag auf der Entwicklung eines Verfahrens zur Symbolerkennung in 2D-Bestandsplänen, das klassische Bildverarbeitung mit Machine Learning kombiniert. Die daraus hervorgegangene Arbeit erhielt auf der FTC 2026 eine Honorable Mention.",
+                "Ein derzeit begutachtetes State-of-the-Art-Manuskript untersucht die übergeordnete Transformation von Architekturplänen über Vektorrepräsentationen und 3D-Gebäudemodelle bis hin zu BIM/IFC-Repräsentationen und schließlich zur Digital-Twin-Readiness.",
             ],
+
 
             publicationsTitle: "Publikationen",
 
@@ -195,14 +196,14 @@ export const content = {
                     title: "Modular Raster-to-Vector Digitization of Architectural Floor Plans",
                     meta: "WSCG 2026 · Erstautor · Veröffentlicht",
                     description:
-                        "Stellt eine modulare Raster-to-Vector-Pipeline sowie eine Evaluationskette für reale Architekturpläne vor, bei denen umfassende Ground Truth nur eingeschränkt oder nicht verfügbar ist.",
+                        "Stellt eine modulare Raster-to-Vector-Pipeline für heterogene und häufig degradierte Bestandspläne sowie eine Evidenzkette zur Evaluation vor, wenn umfassende Ground Truth nur eingeschränkt oder nicht verfügbar ist.",
                     href: site.publications.wscg2026,
                 },
                 {
                     title: "AI-Enhanced Template Matching for Symbol Detection in Technical Drawings",
                     meta: "FTC 2026 · Erstautor · Präsentiert · Honorable Mention",
                     description:
-                        "Kombiniert Template Matching mit einem XGBoost-Klassifikator, dessen Merkmale die Ähnlichkeit einer Kandidatenregion zum jeweils abgefragten Template abbilden statt lediglich deren lokale Bilderscheinung. Dadurch übertrifft der Ansatz neuronale Patch-Baselines, ohne Rohbild-Patches direkt zu verarbeiten.",
+                        "Kombiniert Template Matching mit einem XGBoost-Klassifikator, der im Merkmalsraum arbeitet. Dabei wird jede Kandidatenregion über ihre Ähnlichkeit zum jeweils abgefragten Template repräsentiert statt über das lokale Erscheinungsbild des Bildausschnitts; der Ansatz übertrifft damit neuronale Patch-Baselines.",
                     href: site.publications.ftc2026,
                 },
             ],
@@ -211,9 +212,9 @@ export const content = {
 
             currentResearch: {
                 title: "From Architectural Plans to Digital Building Models: Raster-to-Vector Conversion, BIM/IFC Integration, and Digital Twin Readiness",
-                meta: "ITcon · Alleinautor · Eingereicht",
+                meta: "ITcon · Alleinautor · In Review",
                 description:
-                    "Eine State-of-the-Art-Analyse der vollständigen Transformationskette von 2D-Architekturplänen über Raster-to-Vector-Konvertierung und 3D-Modellerzeugung bis hin zur BIM/IFC-Integration und Digital-Twin-Readiness.",
+                    "Analysiert den Stand der Forschung entlang der vollständigen Transformationskette von 2D-Architekturplänen über Raster-to-Vector-Konvertierung, 3D-Modellerzeugung und BIM/IFC-Integration bis hin zur Digital-Twin-Readiness und führt hierfür klar abgegrenzte Reifegrade, eine analytische Pipeline sowie acht Vergleichsdimensionen zur Einordnung heterogener Forschungsbeiträge ein.",
                 href: site.publications.journal2026,
             },
         },
